@@ -1,0 +1,108 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = """
+[░▒▓](#cba6f7)\
+$os\
+[](bg:#585b70 fg:#cba6f7)\
+$directory\
+[](fg:#585b70 bg:#45475a)\
+$git_branch\
+$git_status\
+[](fg:#45475a bg:#313244)\
+$nodejs\
+$bun\
+$rust\
+$golang\
+$php\
+$python\
+[](fg:#313244 bg:#181825)\
+$time\
+[ ](fg:#181825)\
+\n$character"""
+
+[directory]
+style = "fg:#cdd6f4 bg:#585b70"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[directory.substitutions]
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Music" = " "
+"Pictures" = " "
+
+[git_branch]
+symbol = ""
+style = "bg:#45475a"
+format = '[[ $symbol $branch ](fg:#cba6f7 bg:#45475a)]($style)'
+
+[git_status]
+style = "bg:#45475a"
+format = '[[($all_status$ahead_behind )](fg:#cba6f7 bg:#45475a)]($style)'
+
+[nodejs]
+symbol = ""
+style = "bg:#313244"
+format = '[[ $symbol ($version) ](fg:#b4befe bg:#313244)]($style)'
+
+[bun]
+symbol = ""
+style = "bg:#313244"
+format = '[[ $symbol ($version) ](fg:#b4befe bg:#313244)]($style)'
+
+[rust]
+symbol = ""
+style = "bg:#313244"
+format = '[[ $symbol ($version) ](fg:#b4befe bg:#313244)]($style)'
+
+[golang]
+symbol = ""
+style = "bg:#313244"
+format = '[[ $symbol ($version) ](fg:#b4befe bg:#313244)]($style)'
+
+[php]
+symbol = ""
+style = "bg:#313244"
+format = '[[ $symbol ($version) ](fg:#b4befe bg:#313244)]($style)'
+
+[python]
+symbol = ""
+style = "bg:#313244"
+format = '[[ $symbol ($version) ](fg:#b4befe bg:#313244)]($style)'
+
+[time]
+disabled = false
+time_format = "%R"
+style = "bg:#181825"
+format = '[[  $time ](fg:#cba6f7 bg:#181825)]($style)'
+
+[os]
+style = "bg:#cba6f7 fg:#11111b"
+format = "[ $symbol ]($style)"
+disabled = false
+
+[os.symbols]
+NixOS = ""
+Windows = "󰍲"
+Ubuntu = "󰕈"
+SUSE = ""
+Raspbian = "󰐿"
+Mint = "󰣭"
+Macos = "󰀵"
+Manjaro = ""
+Linux = "󰌽"
+Gentoo = "󰣨"
+Fedora = "󰣛"
+Alpine = ""
+Amazon = ""
+Android = ""
+AOSC = ""
+Arch = "󰣇"
+Artix = "󰣇"
+EndeavourOS = ""
+CentOS = ""
+Debian = "󰣚"
+Redhat = "󱄛"
+RedHatEnterprise = "󱄛"
+Pop = ""
