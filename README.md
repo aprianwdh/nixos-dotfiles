@@ -37,8 +37,5 @@ nixos-dotfiles/
 │   ├── swappy/             # Screenshot editor settings
 │   ├── waybar/             # Status bar styling and modules
 │   └── starship.toml       # Shell prompt configuration
-├── flake.nix               # Entry point for the system and home configurations
-├── flake.lock              # Pinned dependencies for absolute reproducibility
-├── hosts/                  # Host-specific configurations (hardware, bootloader)
-└── modules/                # Custom NixOS modules for system and dev environments
+├── README.md               # README
 ```
