@@ -10,10 +10,6 @@ A declarative, reproducible, and modular system configuration powered by [NixOS]
 
 - [Features](#-features)
 - [Repository Structure](#-repository-structure)
-- [Prerequisites](#-prerequisites)
-- [Installation](#-installation)
-- [Maintenance](#-maintenance)
-- [License](#-license)
 
 ## ✨ Features
 
