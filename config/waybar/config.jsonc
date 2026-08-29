@@ -39,7 +39,7 @@
     "spacing": 6
   },
 "custom/cpucat": {
-    "exec":"/home/zei/.config/waybar/scripts/catloop.sh"
+    "exec":"/home/enzwich/.config/waybar/scripts/catloop.sh"
 },
   "wireplumber": {
     "scroll-step": 5,
