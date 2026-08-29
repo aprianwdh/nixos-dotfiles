@@ -14,11 +14,12 @@
     "battery",
     "mpris",
     "clock",
-    "custom/power"
+    "custom/power",
+    "network"
   ],
   "custom/tab": {
   "format": "[Z]",
-  "on-click": "rofi -show drun",
+  "on-click": "rofi -show drun"
 },
   "hyprland/workspaces": {
     "format": "{name}",
@@ -30,8 +31,7 @@
     "format": "  {artist} - {title} ",
     "format-paused": " 󰐊 {artist} - {title} ",
     "max-length": 37,
-    "tooltip": true,
-    "player": "spotify"
+    "tooltip": true
   },
 
   "tray": {
@@ -72,6 +72,20 @@
   },
 
   "clock": {
-    "format": "{:%m-%d-%Y %H:%M} "
-  }
+    "format": "{:%m/%d/%Y %H:%M} "
+  },
+
+  "network": {
+    "format-wifi": "  {essid}",
+    "format-ethernet": "󰈀  {ipaddr}/{cidr}",
+    "tooltip-format": "󰩟  {ifname} via {gwaddr}",
+    "format-linked": "󰈀  {ifname} (No IP)",
+    "format-disconnected": "󰖪  Disconnected",
+    "on-click": "foot nmtui"
+},
+"custom/power": {
+    "format": "⏻",
+    "on-click": "shutdown now",
+    "tooltip": false
+}
 }

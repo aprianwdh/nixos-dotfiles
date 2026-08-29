@@ -71,14 +71,26 @@ tooltip label {
     font-size: 11px;
 }
 
-#custom-launcher {
+#custom-power {
+    padding: 0 8px;
+    font-size: 15px;
 }
 
 #custom-cpucat {
-  font-family: "Waycat", monospace;
-  font-size: 20px;
-  font-weight: bold;
-  color: white;
-  padding-left: 5px;
-  padding-right: 8px;
+    font-family: "Waycat", monospace;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding-left: 5px;
+    padding-right: 8px;
+}
+
+#network {
+    padding: 0 8px;
+    color: #C4A7E7;
+}
+
+#network.disconnected {
+    background-color: rgba(235, 111, 146, 0.2);
+    color: #eb6f92;
 }
