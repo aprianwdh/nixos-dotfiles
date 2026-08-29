@@ -7,13 +7,12 @@
   "margin-left": 0,
   "margin-right": 0,
 
-  "modules-left": ["hyprland/workspaces","custom/cpucat"],
+  "modules-left": ["hyprland/workspaces","custom/cpucat","clock"],
   "modules-right": [
+    "mpris",
     "wireplumber",
     "backlight",
     "battery",
-    "mpris",
-    "clock",
     "custom/power",
     "network"
   ],
@@ -85,7 +84,7 @@
 },
 "custom/power": {
     "format": "⏻",
-    "on-click": "shutdown now",
+    "on-click": "wlogout",
     "tooltip": false
 }
 }
