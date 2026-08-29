@@ -247,6 +247,7 @@ hl.bind(mainMod .. " + TAB", hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(browser))
 hl.bind(mainMod .. " + P", hl.dsp.exec_cmd('grim -g "$(slurp)" - | swappy -f -'))
 hl.bind(mainMod .. " + V", hl.dsp.exec_cmd('cliphist list | rofi -dmenu -display-columns 2 | cliphist decode | wl-copy'))
+hl.bind(mainMod .. " + ALT + DELETE", hl.dsp.exec_cmd('wlogout'))
 -- Move focus with mainMod + arrow keys and A S
 hl.bind(mainMod .. " + left", hl.dsp.focus({ direction = "left" }))
 hl.bind(mainMod .. " + right", hl.dsp.focus({ direction = "right" }))
