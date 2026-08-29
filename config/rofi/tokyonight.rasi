@@ -1,20 +1,20 @@
 /*
- * Tokyonight colorscheme (big icons) for rofi
+ *colorscheme (big icons) for rofi
  * User: w8ste
  */
 
 
 // define colors etc.
 * {
-    bg: #24283b;
+    bg: #303446;
     hv: #9274ca; 
-    primary: #444b6a;  // TokyoNight bright black
+    primary: #8839ef;
     ug: #0B2447;
     font: "Monospace 11";
     background-color: @bg;
     //dark: @bg;
     border: 0px;
-    kl: #7aa2f7;
+    kl: #ca9ee6;
     black: #000000;
 
     transparent: rgba(46,52,64,0);
