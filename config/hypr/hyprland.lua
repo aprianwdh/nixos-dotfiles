@@ -95,7 +95,7 @@ hl.config({
 		inactive_opacity = 0.8,
 
 		shadow = {
-			enabled = true,
+			enabled = false,
 			range = 4,
 			render_power = 3,
 			color = 0xee1a1a1a,
@@ -188,7 +188,7 @@ hl.config({
 hl.config({
 	misc = {
 		force_default_wallpaper = 0, -- Set to 0 or 1 to disable the anime mascot wallpapers
-		disable_hyprland_logo = false, -- If true disables the random hyprland logo / anime girl background. :(
+		disable_hyprland_logo = true, -- If true disables the random hyprland logo / anime girl background. :(
 	},
 })
 
@@ -204,7 +204,7 @@ hl.config({
 		kb_options = "",
 		kb_rules = "",
 
-		follow_mouse = 1,
+		follow_mouse = 0,
 
 		sensitivity = 0, -- -1.0 - 1.0, 0 means no modification.
 
