@@ -13,8 +13,8 @@
 {
     "label" : "logout",
     "action" : "loginctl terminate-user $USER",
-    "text" : "(L)ogout",
-    "keybind" : "e"
+    "text" : "l(O)gout",
+    "keybind" : "o"
 }
 {
     "label" : "shutdown",
