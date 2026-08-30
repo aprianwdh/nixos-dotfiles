@@ -13,8 +13,8 @@
     "wireplumber",
     "backlight",
     "battery",
-    "custom/power",
-    "network"
+    "network",
+    "custom/power"
   ],
   "custom/tab": {
   "format": "[Z]",
