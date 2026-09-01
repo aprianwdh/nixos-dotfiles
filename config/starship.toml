@@ -20,6 +20,10 @@ $time\
 [ ](fg:#181825)\
 \n$character"""
 
+[character]
+success_symbol = "[>>>](bold #cba6f7)"
+error_symbol = "[>>>](bold #f38ba8)"
+
 [directory]
 style = "fg:#cdd6f4 bg:#585b70"
 format = "[ $path ]($style)"
