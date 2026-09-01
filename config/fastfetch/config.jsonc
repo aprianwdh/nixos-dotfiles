@@ -15,10 +15,18 @@
             "height": 10,
             "width": 24,
             "padding": {
-            "top": 3,
+            "top": 3
+            },
+            "color": {
+                "1": "magenta",
+                "2": "white"
             }
         },
     "display": {
+        "color": {
+            "keys": "magenta",
+            "title": "magenta"
+        },
         "separator": "  "
     },
     "modules": [
