@@ -2,11 +2,11 @@
     font-family: "Monocraft", "Symbols Nerd Font", monospace;
     font-weight: 800;
     font-size: 13px;
-    color: #C4A7E7;
+    color: rgb(203, 166, 247);
 }
 
 window#waybar {
-    background: #1e1e2e;
+    background: rgba(30, 30, 46, 0.80);
     border-radius: 0;
     margin: 0px;
     padding: 0px 0px;
