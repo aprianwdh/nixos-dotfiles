@@ -26,8 +26,6 @@ hl.bind(mainMod .. " + ALT + DELETE", hl.dsp.exec_cmd('wlogout'))
 -- Move focus with mainMod + arrow keys and A S
 hl.bind(mainMod .. " + left", hl.dsp.focus({ direction = "left" }))
 hl.bind(mainMod .. " + right", hl.dsp.focus({ direction = "right" }))
-hl.bind(mainMod .. " + up", hl.dsp.focus({ direction = "up" }))
-hl.bind(mainMod .. " + down", hl.dsp.focus({ direction = "down" }))
 hl.bind(mainMod .. " + A", hl.dsp.focus({ direction = "left" }))
 hl.bind(mainMod .. " + S", hl.dsp.focus({ direction = "right" }))
 -- Column resize keybindings (Scroller layout)
@@ -41,9 +39,11 @@ for i = 1, 10 do
     hl.bind(mainMod .. " + SHIFT + " .. key, hl.dsp.window.move({ workspace = i }))
 end
 
--- Scroll through existing workspaces with mainMod + scroll
+-- Scroll through existing workspaces
 hl.bind(mainMod .. " + mouse_down", hl.dsp.focus({ workspace = "e+1" }))
 hl.bind(mainMod .. " + mouse_up", hl.dsp.focus({ workspace = "e-1" }))
+hl.bind(mainMod .. " + up", hl.dsp.focus({ workspace = "e+1" }))
+hl.bind(mainMod .. " + down", hl.dsp.focus({ workspace = "e-1" }))
 
 -- Move/resize windows with mainMod + LMB/RMB and dragging
 hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag(), { mouse = true })
