@@ -20,6 +20,8 @@ window#waybar {
     border-radius: 0;
     background: transparent;
     color: #5b4950;
+    min-height: 25px;
+    transition: none;
 }
 
 /* active workspace */
