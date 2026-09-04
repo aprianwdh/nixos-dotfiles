@@ -7,14 +7,14 @@
 // define colors etc.
 * {
     bg: rgba(30, 30, 46, 0.50);
-    hv: rgb(203, 166, 247); 
+    hv: rgb(205, 214, 244); 
     primary: rgb(17, 17, 27);
     ug: #0B2447;
     font: "Monocraft 13";
     background-color: @bg;
     //dark: @bg;
     border: 0px;
-    kl: rgb(203, 166, 247);
+    kl: rgb(205, 214, 244);
     black: #000000;
 
     transparent: rgba(0, 69, 206, 0);
