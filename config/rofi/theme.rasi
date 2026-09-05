@@ -6,18 +6,18 @@
 
 // define colors etc.
 * {
-    bg: rgba(30, 30, 46, 0.50);
+    bg: rgba(30, 30, 46, 0.70);
     hv: rgb(205, 214, 244); 
     primary: rgb(17, 17, 27);
     ug: #0B2447;
     font: "Monocraft 13";
-    background-color: @bg;
     //dark: @bg;
     border: 0px;
     kl: rgb(205, 214, 244);
     black: #000000;
 
     transparent: rgba(0, 69, 206, 0);
+    background-color: transparent;
 }
 
 // defines different aspects of the window
@@ -31,8 +31,9 @@ window {
     orientation: horizontal;
     location: center;
     anchor: center;
-    transparency: "screenshot";
-    border-color: @transparent;   
+    transparency: "real";
+    background-color: @bg;
+    border-color: @bg;   
     border: 0px;
     border-radius: 6px;
     spacing: 0;
