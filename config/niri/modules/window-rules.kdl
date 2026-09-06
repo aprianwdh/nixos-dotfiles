@@ -1,0 +1,43 @@
+// Per-window behavior overrides.
+// https://niri-wm.github.io/niri/Configuration:-Window-Rules
+
+// Work around WezTerm's initial configure bug.
+window-rule {
+    match app-id=r#"^org\.wezfurlong\.wezterm$"#
+    default-column-width {}
+}
+
+// Open Firefox picture-in-picture as floating.
+window-rule {
+    match app-id=r#"firefox$"# title="^Picture-in-Picture$"
+    open-floating true
+}
+
+// Example: block password managers from screen capture.
+/-window-rule {
+    match app-id=r#"^org\.keepassxc\.KeePassXC$"#
+    match app-id=r#"^org\.gnome\.World\.Secrets$"#
+    block-out-from "screen-capture"
+}
+
+// Example: rounded corners for all windows.
+/-window-rule {
+    geometry-corner-radius 12
+    clip-to-geometry true
+}
+
+// Window opacity — closest niri equivalent to active/inactive/fullscreen_opacity.
+window-rule {
+    match is-active=true
+    opacity 1.0
+}
+
+window-rule {
+    match is-active=false
+    opacity 0.8
+}
+
+// NOTE: `is-fullscreen` matcher doesn't exist yet in niri (still a feature
+// request upstream), so there's no way to force fullscreen windows back to
+// full opacity via a match rule. Niri fullscreens already render solid/opaque
+// on top of everything else by default, so this case is generally moot.

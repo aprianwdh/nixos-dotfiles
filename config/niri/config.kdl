@@ -1,0 +1,11 @@
+// Main niri config — modular, like the hyprland.lua setup.
+// Each section lives in modules/, included below.
+// https://kdl.dev
+// https://niri-wm.github.io/niri/Configuration:-Introduction
+
+include "modules/input.kdl"
+include "modules/outputs.kdl"
+include "modules/layout.kdl"
+include "modules/misc.kdl"
+include "modules/window-rules.kdl"
+include "modules/binds.kdl"

@@ -1,0 +1,8 @@
+// Output (monitor) configuration.
+// https://niri-wm.github.io/niri/Configuration:-Outputs
+output "eDP-1" {
+    mode "1920x1080@59.984"
+    scale 1
+    transform "normal"
+    position x=0 y=0
+}

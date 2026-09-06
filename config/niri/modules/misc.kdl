@@ -1,0 +1,18 @@
+// Startup, hotkey overlay, screenshots, animations.
+spawn-at-startup "waybar"
+spawn-at-startup "waypaper" "--restore"
+
+hotkey-overlay {
+    skip-at-startup
+}
+
+prefer-no-csd
+
+screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
+
+// Animation settings.
+// https://niri-wm.github.io/niri/Configuration:-Animations
+animations {
+    on
+    // slowdown 3.0
+}
