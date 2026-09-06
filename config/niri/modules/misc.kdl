@@ -10,3 +10,13 @@ animations {
     on
     slowdown 1.0
 }
+
+overview {
+  zoom 0.35
+  workspace-shadow {
+    on
+    softness 60
+    spread 25
+    color "rgba(0, 0, 0, 1)"
+  }
+}
