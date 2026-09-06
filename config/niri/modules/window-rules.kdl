@@ -37,6 +37,14 @@ window-rule {
     opacity 0.8
 }
 
+layer-rule {
+    // Mencocokkan namespace mpvpaper
+    match namespace="^mpvpaper$"
+    
+    // Mengunci video wallpaper agar berada di dalam backdrop overview
+    place-within-backdrop true
+}
+
 // NOTE: `is-fullscreen` matcher doesn't exist yet in niri (still a feature
 // request upstream), so there's no way to force fullscreen windows back to
 // full opacity via a match rule. Niri fullscreens already render solid/opaque
