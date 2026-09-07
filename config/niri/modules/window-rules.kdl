@@ -26,3 +26,8 @@ window-rule {
     match app-id="codium"
     default-column-width {proportion 0.8;}
 }
+
+window-rule {
+    match app-id="foot"
+    default-column-width {proportion 0.6;}
+}
