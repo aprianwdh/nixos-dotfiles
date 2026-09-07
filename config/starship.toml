@@ -1,112 +1,106 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = """
-[░▒▓](#cba6f7)\
+[░▒▓](#b4befe)\
 $os\
-[](bg:#585b70 fg:#cba6f7)\
+[ ](bg:#45475a fg:#b4befe)\
 $directory\
-[](fg:#585b70 bg:#45475a)\
+[ ](fg:#45475a bg:#313244)\
 $git_branch\
 $git_status\
-[](fg:#45475a bg:#313244)\
+[ ](fg:#313244 bg:#1e1e2e)\
 $nodejs\
 $bun\
 $rust\
 $golang\
 $php\
-$python\
-[](fg:#313244 bg:#181825)\
+[ ](fg:#1e1e2e bg:#11111b)\
 $time\
-[ ](fg:#181825)\
+[ ](fg:#11111b)\
 \n$character"""
 
 [character]
-success_symbol = "[>>>](bold #cba6f7)"
+success_symbol = "[>>>](bold #b4befe)"
 error_symbol = "[>>>](bold #f38ba8)"
 
 [directory]
-style = "fg:#cdd6f4 bg:#585b70"
+style = "fg:#cdd6f4 bg:#45475a"
 format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
 
 [directory.substitutions]
 "Documents" = "󰈙 "
-"Downloads" = " "
-"Music" = " "
-"Pictures" = " "
+"Downloads" = " "
+"Music" = " "
+"Pictures" = " "
 
 [git_branch]
-symbol = ""
-style = "bg:#45475a"
-format = '[[ $symbol $branch ](fg:#cba6f7 bg:#45475a)]($style)'
+symbol = ""
+style = "bg:#313244"
+format = '[[ $symbol $branch ](fg:#b4befe bg:#313244)]($style)'
 
 [git_status]
-style = "bg:#45475a"
-format = '[[($all_status$ahead_behind )](fg:#cba6f7 bg:#45475a)]($style)'
+style = "bg:#313244"
+format = '[[($all_status$ahead_behind )](fg:#b4befe bg:#313244)]($style)'
 
 [nodejs]
-symbol = ""
-style = "bg:#313244"
-format = '[[ $symbol ($version) ](fg:#b4befe bg:#313244)]($style)'
+symbol = ""
+style = "bg:#1e1e2e"
+format = '[[ $symbol ($version) ](fg:#b4befe bg:#1e1e2e)]($style)'
 
 [bun]
-symbol = ""
-style = "bg:#313244"
-format = '[[ $symbol ($version) ](fg:#b4befe bg:#313244)]($style)'
+symbol = ""
+style = "bg:#1e1e2e"
+format = '[[ $symbol ($version) ](fg:#b4befe bg:#1e1e2e)]($style)'
 
 [rust]
-symbol = ""
-style = "bg:#313244"
-format = '[[ $symbol ($version) ](fg:#b4befe bg:#313244)]($style)'
+symbol = ""
+style = "bg:#1e1e2e"
+format = '[[ $symbol ($version) ](fg:#b4befe bg:#1e1e2e)]($style)'
 
 [golang]
-symbol = ""
-style = "bg:#313244"
-format = '[[ $symbol ($version) ](fg:#b4befe bg:#313244)]($style)'
+symbol = ""
+style = "bg:#1e1e2e"
+format = '[[ $symbol ($version) ](fg:#b4befe bg:#1e1e2e)]($style)'
 
 [php]
-symbol = ""
-style = "bg:#313244"
-format = '[[ $symbol ($version) ](fg:#b4befe bg:#313244)]($style)'
-
-[python]
-symbol = ""
-style = "bg:#313244"
-format = '[[ $symbol ($version) ](fg:#b4befe bg:#313244)]($style)'
+symbol = ""
+style = "bg:#1e1e2e"
+format = '[[ $symbol ($version) ](fg:#b4befe bg:#1e1e2e)]($style)'
 
 [time]
 disabled = false
-time_format = "%R"
-style = "bg:#181825"
-format = '[[  $time ](fg:#cba6f7 bg:#181825)]($style)'
+time_format = "%R" # Hour:Minute Format
+style = "bg:#11111b"
+format = '[[  $time ](fg:#b4befe bg:#11111b)]($style)'
 
 [os]
-style = "bg:#cba6f7 fg:#11111b"
+style = "bg:#b4befe fg:#11111b"
 format = "[ $symbol ]($style)"
 disabled = false
 
 [os.symbols]
-NixOS = ""
 Windows = "󰍲"
 Ubuntu = "󰕈"
-SUSE = ""
+SUSE = ""
 Raspbian = "󰐿"
 Mint = "󰣭"
 Macos = "󰀵"
-Manjaro = ""
+Manjaro = ""
 Linux = "󰌽"
 Gentoo = "󰣨"
 Fedora = "󰣛"
-Alpine = ""
-Amazon = ""
-Android = ""
-AOSC = ""
+Alpine = ""
+Amazon = ""
+Android = ""
+AOSC = ""
 Arch = "󰣇"
 Artix = "󰣇"
-EndeavourOS = ""
-CentOS = ""
+EndeavourOS = ""
+CentOS = ""
 Debian = "󰣚"
 Redhat = "󱄛"
 RedHatEnterprise = "󱄛"
-Pop = ""
+Pop = ""
+NixOS = "󱄅"

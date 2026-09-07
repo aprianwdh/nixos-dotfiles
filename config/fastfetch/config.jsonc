@@ -10,21 +10,23 @@
         // },
 
         "logo": {
-            "source": "~/.config/fastfetch/nixpurple.png",
-            "type": "sixel",
+            "source": "~/.config/fastfetch/ascii.txt",
+            "type": "file",
             "padding": {
-            "top": 3,
-            "left":3
+            "top": 1,
+            "left":1,
+            "right":1
             },
             "color": {
-                "1": "magenta",
-                "2": "white"
+                "1": "#b4befe",
+                "2": "#cdd6f4"
             }
         },
     "display": {
         "color": {
-            "keys": "magenta",
-            "title": "magenta"
+            "keys": "#b4befe",
+            "title": "#b4befe",
+            "output": "#b4befe"
         },
         "separator": "  "
     },
@@ -35,63 +37,63 @@
         },
         {
             "type": "os",
-            "key": "│ {#34}󰇅 os      {#keys}│"
+            "key": "│ {##b4befe}󰇅 os      {#keys}│"
         },
         {
             "type": "host",
-            "key": "│ {#36}󰒋 host    {#keys}│",
+            "key": "│ {##b4befe}󰒋 host    {#keys}│",
             "format":"nixos-btw"
         },
         {
             "type": "cpu",
-            "key": "│ {#32} cpu     {#keys}│",
+            "key": "│ {##b4befe} cpu     {#keys}│",
             "format":"Intel 1005G1"
         },
         {
             "type": "gpu",
-            "key": "│ {#34}󰡨 gpu     {#keys}│",
+            "key": "│ {##b4befe}󰡨 gpu     {#keys}│",
             "format": "AEMDE ERTEX 18.000"
         },
         {
             "type": "wm",
-            "key": "│ {#33}󰨇 wm      {#keys}│"
+            "key": "│ {##b4befe}󰨇 wm      {#keys}│"
         },
         {
             "type": "packages",
-            "key": "│ {#35} pkgs    {#keys}│",
+            "key": "│ {##b4befe} pkgs    {#keys}│",
             "format": "(nix)"
         },
         {
             "type": "shell",
-            "key": "│ {#32} shell   {#keys}│"
+            "key": "│ {##b4befe} shell   {#keys}│"
         },
         {
             "type": "kernel",
-            "key": "│ {#33}󰍛 kernel  {#keys}│"
+            "key": "│ {##b4befe}󰍛 kernel  {#keys}│"
         },
         {
             "type": "uptime",
-            "key": "│ {#34} uptime  {#keys}│",
+            "key": "│ {##b4befe} uptime  {#keys}│",
             "format": "{2}h {3}m"
         },
         {
             "type": "command",
-            "key": "│ {#35}󰔟 age     {#keys}│",
+            "key": "│ {##b4befe}󰔟 age     {#keys}│",
             "text": "birth_install=$(stat -c %W /etc/nixos); current=$(date +%s); days_difference=$(( (current - birth_install) / 86400 )); echo $days_difference days"
         },
         {
             "type": "memory",
-            "key": "│ {#36} memory  {#keys}│"
+            "key": "│ {##b4befe} memory  {#keys}│"
         },
         {
             "type": "disk",
-            "key": "│ {#31}󰚩 root    {#keys}│",
+            "key": "│ {##b4befe}󰚩 root    {#keys}│",
             "folders": "/",
             "format": "{1} / {2} ({3})"
         },
         {
             "type": "disk",
-            "key": "│ {#32}󱂵 home    {#keys}│",
+            "key": "│ {##b4befe}󱂵 home    {#keys}│",
             "folders": "/home",
             "format": "{1} / {2} ({3})"
         },
@@ -101,7 +103,7 @@
         },
         {
             "type": "colors",
-            "key": "│ {#39} colors  {#keys}│",
+            "key": "│ {##b4befe} colors  {#keys}│",
             "symbol": "circle"
         },
         {
