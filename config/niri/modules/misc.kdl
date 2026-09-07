@@ -12,7 +12,7 @@ animations {
 }
 
 overview {
-  zoom 0.35
+  zoom 0.5
   workspace-shadow {
     on
     softness 60
