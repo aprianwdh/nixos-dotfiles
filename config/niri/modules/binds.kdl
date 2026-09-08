@@ -4,7 +4,8 @@ binds {
     Mod+Return { spawn "foot"; }
     Mod+Q repeat=false { close-window; }
     Mod+E { spawn "thunar"; }
-    Mod+F { fullscreen-window; }
+    Mod+F { maximize-column; }
+    Mod+SHIFT+F { fullscreen-window; }
     Mod+Tab { spawn "rofi" "-show" "drun"; }
     Mod+B { spawn "firefox"; }
     Mod+P { spawn-sh "grim -g \"$(slurp)\" - | swappy -f -"; }
