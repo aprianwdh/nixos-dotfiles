@@ -10,3 +10,4 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 fastfetch
+alias ytm="python3 ~/Projects/pergabutan/ytm_larp.py"
