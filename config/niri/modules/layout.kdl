@@ -11,8 +11,6 @@ layout {
         proportion 0.66667
     }
 
-    default-column-width { proportion 0.5; }
-
     focus-ring {
         on
         width 4
@@ -44,4 +42,9 @@ layout {
     }
   
   background-color "transparent"
+}
+
+window-rule {
+    default-column-width { proportion 0.5; }
+    default-window-height { proportion 0.5; }
 }
