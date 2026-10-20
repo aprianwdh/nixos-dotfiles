@@ -27,9 +27,15 @@ layer-rule {
 }
 
 window-rule {
+    match app-id="firefox"
+    default-column-width {proportion 1.0;}
+}
+
+window-rule {
     match app-id="codium"
     default-column-width {proportion 0.8;}
 }
+
 
 window-rule {
     match app-id="foot"
